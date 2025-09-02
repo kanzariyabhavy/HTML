@@ -1,0 +1,128 @@
+/* Reset & fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(135deg, #111, #222);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  header {
+    background-color: #1e1e2f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    color: #00e0ff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  nav ul li a:hover {
+    color: #00e0ff;
+    text-shadow: 0 0 5px #00e0ff;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero {
+    height: 90vh;
+    background: linear-gradient(120deg, #ff0080, #7928ca);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero span {
+    color: #00f0ff;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00f0ff;
+    color: #111;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .hero .btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+    color: #ff0080;
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-align: center;
+  }
+  
+  .about p, .contact p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .project-card:hover {
+    background: #00f0ff;
+    color: #111;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 240, 255, 0.4);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9em;
+    color: #666;
+  }
+  

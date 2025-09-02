@@ -1,0 +1,117 @@
+:root {
+    --primary:red;
+    --accent: green;
+    --background: #F4F4F4;
+    --text: #333333;
+    --light: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--light);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero .highlight {
+    color: var(--light);
+    font-weight: 600;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--light);
+    color: var(--primary);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: var(--accent);
+    color: var(--light);
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Skills */
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skills-list i {
+    color: var(--primary);
+    transition: transform 0.3s ease;
+  }
+  
+  .skills-list i:hover {
+    transform: scale(1.2);
+    color: blue;
+  }
+  
+  /* Contact */
+  .contact p {
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
